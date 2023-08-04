@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section h1,
+h2,
+h3 {
+  color: var(--card-name-color);
+  margin: 15px 0px;
+}
+
+section p,
+ul,
+ol {
+  color: var(--blog-text-color);
+}
+
+section .btns {
+  color: var(--card-heading-color);
+}
+
+section {
+  margin: 50px 150px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 40px;
+}
+
+.content .date {
+  font-size: 12px;
+}
+
+.content .text {
+  margin-bottom: 10px;
+}
+
+.content .border-text {
+  border: 2px solid var(--card-border-color);
+  padding: 8px 0;
+  margin-bottom: 5px;
+}
+
+section ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.content .btns {
+  display: flex;
+}
+
+.content .btns .cylinder-btn {
+  /* display: inline-block; */
+  border-radius: 30%;
+  padding: 10px 20px;
+  color: #ffad61;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #999;
+  margin: 10px 8px 10px 0;
+  transition: background-color 0.5s ease;
+}
+
+.content .cylinder-btn:hover {
+  color: blue;
+  background-color: #fff;
+}
+
+aside .months a,
+.social-media a {
+  display: block;
+  color: #398fff;
+  /* display: flex;
+  flex-direction: column; */
+}

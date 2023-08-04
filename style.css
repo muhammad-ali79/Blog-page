@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blog-background: #191627;
+  --nav-color: #e6e5e5;
+  --card-background-color: #2c1c7c;
+  --card-border-color: #999;
+  --card-name-color: #ffff00;
+  --card-heading-color: #ff9100;
+  --card-desc-color: #f3e093;
+  --link-hover-border-color: #ff00dd;
+  --blog-text-color: #b0e9ff;
+  --blog-links-color: #398fff;
+}
+
+body {
+  background-color: var(--blog-background);
+  overflow-x: hidden;
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  color: var(--nav-color);
+}
+
+header a {
+  color: var(--nav-color);
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
+
+header i {
+  cursor: pointer;
+}
+
+.container {
+  margin: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px 5px;
+}
+
+.container .card {
+  width: 47%;
+  padding: 15px 30px;
+  background-color: var(--card-background-color);
+  color: var(--card-desc-color);
+  border: 2px solid var(--card-border-color);
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  transition: transform 0.5s ease;
+}
+
+.container .right-card {
+  border-radius: 10px 0 0 10px;
+}
+
+.card .card-name {
+  color: var(--card-name-color);
+}
+
+.card .card-title {
+  color: var(--card-heading-color);
+}
+
+.card a {
+  display: inline-block;
+  color: var(--card-desc-color);
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+
+.card a:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid #ff00dd;
+}
